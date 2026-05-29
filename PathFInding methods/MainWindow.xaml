@@ -1,0 +1,30 @@
+﻿<Window x:Class="PathFInding_methods.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PathFInding_methods"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="White">
+
+    <Viewbox Stretch="Uniform">
+        <Canvas Name="MyCanvas" Background="LightPink" Width="800" Height="400" Margin="0, 40, 0, 10" MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown" MouseRightButtonDown="MyCanvas_MouseRightButtonDown">
+
+            <Ellipse Name="Start"  Height="20" Stroke="Black" Fill="LightGreen" Width="20" MouseLeftButtonDown="Start_MouseLeftButton"/>
+            <Ellipse Name="End" Height="20" Stroke="Black" Fill="red" Width="20" MouseLeftButtonDown="End_MouseLeftButton"/>
+
+            <Button Name="ButtonEditSE" Content="Change end and start " Canvas.Left="10" Canvas.Top="-36" Background="LightBlue" Height="31" Width="143" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDoubleClick="EditSE_MouseLeftButtonDown"/>
+            <Button Name="ButtonEditWalls" Content="Edit Walls: none" Canvas.Left="170" Canvas.Top="-36" Background="LightBlue" Height="31" Width="144" MouseDoubleClick="EditWalls_MouseLeftButtonDown" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Content="Algoritms :" Canvas.Left="334" Canvas.Top="-35" HorizontalAlignment="Left" VerticalAlignment="Center" Width="150" Height="30" Background="#FFFF8383" BorderBrush="DimGray" BorderThickness="1"/>
+            <ComboBox Name="AlgoritmsTypes" Canvas.Left="406" Canvas.Top="-31" BorderBrush="White" Foreground="#FF097B00" Background="Black">
+                <ComboBoxItem Name="AStar" IsSelected="True" Content="A*"/>
+                <ComboBoxItem Name="Dijkstra" Content="Dijkstra"/>
+                <ComboBoxItem Name="Greedy" Content="Greedy"/>
+            </ComboBox>
+            <Button Name="ButtonGo" Content="GO" Canvas.Left="688" Canvas.Top="-36" Background="LightGreen" Height="31" Width="56" MouseDoubleClick="ButtonGo_MouseDoubleClick" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+
+        </Canvas>
+    </Viewbox>
+</Window>
