@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "PathFInding methods/1.0.0": {
+        "runtime": {
+          "PathFInding methods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PathFInding methods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
